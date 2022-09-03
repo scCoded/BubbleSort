@@ -1,75 +1,70 @@
-.App {
-  text-align: center;
-}
-
 body {
   background-color: #09d3ac;
 }
 
 .container {
   padding: 10px;
-
  }
 
  .list-container {
   display: flex;
+  flex-wrap: wrap;
  }
 
  div[id*='bubble'] {
+  border-style: solid;
   border-radius: 50%;
-  width: 200px;
+  width: 100px;
   height: 110px;
   background-color: lightblue;
-  margin-right: 50px;
+  margin-right: 20px;
   padding-top: 90px;
-  padding-left: 25px;
   margin-bottom: 40px;
+  flex: 0 0 21%;
  }
 
 .highlight {
   color: red;
-  animation: blinker 1s linear infinite;
- }
+  animation: blinker 1s 1;
+}
 
- @keyframes blinker {
+@keyframes blinker {
   50% {
     opacity: 0;
   }
 }
 
-.comparing {
-  content: "\2191";
+.comparison {
+  background: linear-gradient(90deg,#0000 33%,rgba(255,255,255,0.3) 50%,#0000 66%) lightblue ;
+  background-size:300% 100%;
+  animation: shine 2s infinite;
 }
 
- input {
+@keyframes shine {
+  0% {
+    background-position: right;    
+  }
+}
+
+input {
   text-align: center;
   background-color: white;
- }
-
-
-.App-logo {
-  height: 40vmin;
+  display: block;
+  margin : 0 auto;
+  font-size: larger;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  margin-right: 20px;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
 }
 
-.App-link {
-  color: #09d3ac;
+.start {
+  background-color: #4CAF50;
 }
 
-.animate-left {
-  animation: go-left 1.5s linear;
-}
-
-.animate-right {
-  animation: go-right 1.5s linear;
+.add {
+  background-color: #614caf;
 }
