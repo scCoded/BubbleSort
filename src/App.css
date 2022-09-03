@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #09d3ac;
+}
+
+.container {
+  padding: 10px;
+
+ }
+
+ .list-container {
+  display: flex;
+ }
+
+ div[id*='bubble'] {
+  border-radius: 50%;
+  width: 200px;
+  height: 110px;
+  background-color: lightblue;
+  margin-right: 50px;
+  padding-top: 90px;
+  padding-left: 25px;
+  margin-bottom: 40px;
+ }
+
+.highlight {
+  color: red;
+  animation: blinker 1s linear infinite;
+ }
+
+ @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.comparing {
+  content: "\2191";
+}
+
+ input {
+  text-align: center;
+  background-color: white;
+ }
+
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.animate-left {
+  animation: go-left 1.5s linear;
+}
+
+.animate-right {
+  animation: go-right 1.5s linear;
+}
